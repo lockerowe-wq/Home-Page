@@ -203,6 +203,10 @@ img {
 
 .hero-photo img {
     width: 100%;
+    /* hide broken-image icon when photo is unavailable */
+    min-height: 60px;
+    background: #e8eef8;
+    color: transparent;
 }
 
 /* ---------- People Page ---------- */
