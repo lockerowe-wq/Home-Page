@@ -1,0 +1,513 @@
+/* ==========================================================================
+   Rowe Lab – Research in Evolutionary Ecology
+   Styles for the personal/lab homepage
+   ========================================================================== */
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    background: #fff;
+}
+
+a {
+    color: #002A5C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0055B3;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Layout Wrapper ---------- */
+.site-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------- Site Header ---------- */
+.site-header {
+    background-color: #002A5C;
+    padding: 24px 0 18px;
+}
+
+.site-header .site-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.site-branding {
+    color: #fff;
+}
+
+.site-title {
+    font-family: "Georgia", serif;
+    font-size: 1.65rem;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.site-title:hover {
+    color: #CCE0FF;
+    text-decoration: none;
+}
+
+.site-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    color: #A8C8FF;
+    margin-top: 3px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* ---------- Primary Navigation ---------- */
+.primary-nav {
+    background-color: #003E7E;
+    border-bottom: 3px solid #0055B3;
+}
+
+.primary-nav .site-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.primary-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-nav ul li a {
+    display: block;
+    color: #D8E9FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.primary-nav ul li a:hover,
+.primary-nav ul li a.active {
+    background-color: #0055B3;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ---------- Main Content Area ---------- */
+.site-main {
+    padding: 40px 0;
+    min-height: calc(100vh - 220px);
+}
+
+.content-area {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* ---------- Page / Entry Styling ---------- */
+.page-header {
+    border-bottom: 2px solid #002A5C;
+    margin-bottom: 28px;
+    padding-bottom: 10px;
+}
+
+.page-title {
+    font-family: "Georgia", serif;
+    font-size: 1.6rem;
+    color: #002A5C;
+    font-weight: normal;
+}
+
+.entry-content h2 {
+    font-family: "Georgia", serif;
+    font-size: 1.25rem;
+    color: #002A5C;
+    margin: 28px 0 10px;
+    border-bottom: 1px solid #cce;
+    padding-bottom: 4px;
+}
+
+.entry-content h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin: 20px 0 6px;
+    font-weight: bold;
+}
+
+.entry-content p {
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.entry-content ul,
+.entry-content ol {
+    margin: 0 0 16px 24px;
+}
+
+.entry-content li {
+    margin-bottom: 6px;
+}
+
+/* ---------- Home Page Hero ---------- */
+.home-hero {
+    margin-bottom: 32px;
+}
+
+.home-hero .hero-photo {
+    float: right;
+    margin: 0 0 20px 30px;
+    width: 220px;
+    border: 3px solid #dde;
+    border-radius: 4px;
+}
+
+.hero-photo img {
+    width: 100%;
+    /* hide broken-image icon when photo is unavailable */
+    min-height: 60px;
+    background: #e8eef8;
+    color: transparent;
+}
+
+/* ---------- People Page ---------- */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 24px;
+}
+
+.person-card {
+    border: 1px solid #dde;
+    border-radius: 6px;
+    padding: 20px;
+    background: #f9f9fb;
+}
+
+.person-card h3 {
+    font-family: "Georgia", serif;
+    font-size: 1.05rem;
+    color: #002A5C;
+    margin-bottom: 4px;
+}
+
+.person-card .person-role {
+    font-size: 0.85rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.person-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.people-section-title {
+    font-family: "Georgia", serif;
+    font-size: 1.2rem;
+    color: #002A5C;
+    margin: 36px 0 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #aac;
+}
+
+.alumni-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    column-gap: 30px;
+}
+
+.alumni-list li {
+    font-size: 0.9rem;
+    padding: 4px 0;
+    border-bottom: 1px dotted #ddd;
+    break-inside: avoid;
+}
+
+/* ---------- Publications Page ---------- */
+.pub-year-group {
+    margin-bottom: 30px;
+}
+
+.pub-year {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #002A5C;
+    border-bottom: 2px solid #002A5C;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+}
+
+.pub-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pub-list li {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.pub-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #002A5C;
+}
+
+.pub-list li .pub-journal {
+    font-style: italic;
+}
+
+/* ---------- Research Page ---------- */
+.research-topics {
+    margin-top: 24px;
+}
+
+.research-topic {
+    margin-bottom: 32px;
+}
+
+.research-topic h2 {
+    font-family: "Georgia", serif;
+    font-size: 1.2rem;
+    color: #002A5C;
+    margin-bottom: 10px;
+    border-left: 4px solid #0055B3;
+    padding-left: 12px;
+}
+
+.research-topic p {
+    margin-bottom: 12px;
+}
+
+/* ---------- Teaching Page ---------- */
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-item {
+    border: 1px solid #dde;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    background: #f9f9fb;
+}
+
+.course-item h3 {
+    font-family: "Georgia", serif;
+    font-size: 1.05rem;
+    color: #002A5C;
+    margin-bottom: 4px;
+}
+
+.course-item .course-code {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ---------- Contact Page ---------- */
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.contact-card {
+    background: #f4f7ff;
+    border: 1px solid #c8d8f0;
+    border-radius: 6px;
+    padding: 20px 24px;
+}
+
+.contact-card h3 {
+    font-family: "Georgia", serif;
+    font-size: 1.05rem;
+    color: #002A5C;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #c8d8f0;
+    padding-bottom: 6px;
+}
+
+.contact-card p,
+.contact-card address {
+    font-size: 0.9rem;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.contact-card a {
+    color: #002A5C;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.widget {
+    background: #f4f7ff;
+    border: 1px solid #c8d8f0;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.widget-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #002A5C;
+    border-bottom: 1px solid #c8d8f0;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget ul li {
+    border-bottom: 1px dotted #dde;
+    padding: 5px 0;
+    font-size: 0.85rem;
+}
+
+.widget ul li:last-child {
+    border-bottom: none;
+}
+
+/* ---------- Site Footer ---------- */
+.site-footer {
+    background-color: #002A5C;
+    color: #A8C8FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+}
+
+.site-footer a {
+    color: #CCE0FF;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ---------- Utility ---------- */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text-muted {
+    color: #777;
+    font-size: 0.88rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+    .content-area {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .alumni-list {
+        columns: 1;
+    }
+
+    .home-hero .hero-photo {
+        float: none;
+        margin: 0 auto 20px;
+        width: 180px;
+    }
+
+    .site-header .site-wrapper {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .primary-nav ul {
+        justify-content: center;
+    }
+
+    .primary-nav ul li a {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+}
