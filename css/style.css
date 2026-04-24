@@ -866,3 +866,31 @@ img {
         font-size: 1.65rem;
     }
 }
+
+/* ---------- Home page utility classes ---------- */
+.home-main {
+    padding-top: 0;
+}
+
+.home-about-text {
+    max-width: 720px;
+}
+
+.section-alt {
+    background: var(--color-surface);
+}
+
+.btn-solid-primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn-solid-primary:hover {
+    background: var(--color-primary-mid);
+    color: #fff;
+    text-decoration: none;
+}
+
+.pub-preview-item p {
+    margin: 0;
+}
