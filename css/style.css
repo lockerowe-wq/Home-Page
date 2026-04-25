@@ -4,29 +4,29 @@
    ========================================================================== */
 
 /* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap');
 
 /* ---------- Design Tokens ---------- */
 :root {
-    --color-primary:     #003FA5;
-    --color-primary-dark:#001F5A;
-    --color-primary-mid: #0055C8;
-    --color-accent:      #2979FF;
-    --color-accent-light:#E8F0FE;
-    --color-text:        #1A1A2E;
+    --color-primary:     #0D9488;
+    --color-primary-dark:#075E58;
+    --color-primary-mid: #14B8A6;
+    --color-accent:      #2DD4BF;
+    --color-accent-light:#CCFBF1;
+    --color-text:        #1A2E2E;
     --color-text-muted:  #6B7280;
-    --color-bg:          #F8F9FC;
+    --color-bg:          #F0FDFB;
     --color-surface:     #FFFFFF;
-    --color-border:      #E2E8F0;
-    --color-border-hover:#CBD5E1;
+    --color-border:      #CBE9E7;
+    --color-border-hover:#99D4CF;
     --radius-sm:         6px;
-    --radius-md:         10px;
-    --radius-lg:         16px;
-    --shadow-sm:         0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-    --shadow-md:         0 4px 12px rgba(0,0,0,.08);
-    --shadow-lg:         0 10px 30px rgba(0,0,0,.10);
-    --font-sans:         'Inter', system-ui, -apple-system, sans-serif;
-    --font-display:      'Playfair Display', Georgia, serif;
+    --radius-md:         12px;
+    --radius-lg:         18px;
+    --shadow-sm:         0 2px 6px rgba(13,148,136,.10), 0 1px 3px rgba(0,0,0,.06);
+    --shadow-md:         0 6px 20px rgba(13,148,136,.18);
+    --shadow-lg:         0 12px 36px rgba(13,148,136,.22);
+    --font-sans:         'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display:      'Syne', system-ui, sans-serif;
     --transition:        0.2s ease;
 }
 
@@ -225,7 +225,7 @@ img {
 
 /* ---------- Home Page Hero ---------- */
 .home-hero {
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #0046b8 100%);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #0D9488 100%);
     color: #fff;
     padding: 80px 0 72px;
     position: relative;
@@ -387,15 +387,17 @@ img {
 .research-card {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-accent);
     border-radius: var(--radius-md);
     padding: 24px;
+    box-shadow: var(--shadow-sm);
     transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
 }
 
 .research-card:hover {
     box-shadow: var(--shadow-md);
-    border-color: var(--color-border-hover);
-    transform: translateY(-2px);
+    border-top-color: var(--color-primary);
+    transform: translateY(-4px);
 }
 
 .research-card-icon {
@@ -435,16 +437,18 @@ img {
 .pub-preview-item {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
-    border-left: 3px solid var(--color-accent);
+    border-left: 4px solid var(--color-accent);
     border-radius: var(--radius-sm);
     padding: 16px 20px;
     font-size: 0.875rem;
     line-height: 1.6;
-    transition: box-shadow var(--transition);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .pub-preview-item:hover {
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
+    transform: translateX(3px);
 }
 
 .pub-preview-item .pub-year-badge {
@@ -493,6 +497,7 @@ img {
 
 .person-card {
     border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-accent);
     border-radius: var(--radius-md);
     padding: 24px;
     background: var(--color-surface);
@@ -502,7 +507,7 @@ img {
 
 .person-card:hover {
     box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
 }
 
 .person-avatar-placeholder {
@@ -603,12 +608,14 @@ img {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
-    border-left: 3px solid var(--color-accent);
-    transition: box-shadow var(--transition);
+    border-left: 4px solid var(--color-accent);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .pub-list li:hover {
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
+    transform: translateX(3px);
 }
 
 .pub-list li .pub-journal {
@@ -629,11 +636,13 @@ img {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     padding: 28px 32px;
-    transition: box-shadow var(--transition);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .research-topic:hover {
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .research-topic h2 {
@@ -730,14 +739,16 @@ img {
 .contact-card {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-accent);
     border-radius: var(--radius-md);
     padding: 24px 28px;
     box-shadow: var(--shadow-sm);
-    transition: box-shadow var(--transition);
+    transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .contact-card:hover {
     box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .contact-card h3 {
