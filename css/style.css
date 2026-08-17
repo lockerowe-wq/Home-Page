@@ -264,6 +264,10 @@ img {
     color: var(--color-text-muted);
 }
 
+.alumni-list:not(.single-column) li {
+    padding: 1.75px 0;
+}
+
 .alumni-list li strong {
     color: var(--color-text);
     font-weight: 500;
