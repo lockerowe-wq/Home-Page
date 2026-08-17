@@ -506,4 +506,15 @@ img {
     .page-title {
         font-size: 1.5rem;
     }
+
+    .people-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .rowe-portrait {
+        width: 160px;
+        margin: 0 auto;
+    }
 }
