@@ -24,6 +24,6 @@
     }
 
     loadComponent('site-header', '/components/site-header.html');
-    loadComponent('site-nav',    '/components/site-nav.html', setActiveNav);
+    loadComponent('site-nav',    '/components/site-nav-v2.html', setActiveNav);
     loadComponent('site-footer', '/components/site-footer.html');
 }());

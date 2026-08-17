@@ -61,7 +61,7 @@ img {
 }
 
 .home-inline-photo {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 8px auto 24px;
 }
@@ -90,6 +90,13 @@ img {
 
 .home-figure-caption-sm {
     width: 56%;
+}
+
+.contact-illustration {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 24px auto 24px;
 }
 
 /* ---------- Layout Wrapper ---------- */
@@ -231,7 +238,8 @@ img {
     padding-top: 24px;
 }
 
-.entry-content > .people-section-title:first-child {
+.entry-content > .people-section-title:first-of-type,
+.people-intro-text .people-section-title {
     margin-top: 0;
     border-top: none;
     padding-top: 0;
@@ -251,7 +259,7 @@ img {
 
 .alumni-list li {
     font-size: 0.875rem;
-    padding: 7px 0;
+    padding: 3.5px 0;
     break-inside: avoid;
     color: var(--color-text-muted);
 }
@@ -417,6 +425,24 @@ img {
 
 .contact-card ul li {
     margin-bottom: 10px;
+}
+
+.people-intro {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.people-intro-text {
+    flex: 1;
+}
+
+.rowe-portrait {
+    width: 220px;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0;
 }
 
 /* ---------- Site Footer ---------- */
