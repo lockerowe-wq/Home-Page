@@ -38,7 +38,7 @@ html {
 body {
     font-family: var(--font-sans);
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.5;
     color: var(--color-text);
     background: var(--color-bg);
 }
@@ -183,7 +183,7 @@ img {
 
 /* ---------- Main Content Area ---------- */
 .site-main {
-    padding: 40px 0 64px;
+    padding: 28px 0 48px;
     min-height: calc(100vh - 160px);
 }
 
@@ -203,29 +203,29 @@ img {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin: 32px 0 12px;
+    margin: 22px 0 8px;
 }
 
 .entry-content h3 {
     font-size: 1rem;
     color: var(--color-text);
-    margin: 18px 0 6px;
+    margin: 14px 0 4px;
     font-weight: 600;
 }
 
 .entry-content p {
-    margin-bottom: 16px;
+    margin-bottom: 11px;
     color: var(--color-text);
     max-width: 760px;
 }
 
 .entry-content ul,
 .entry-content ol {
-    margin: 0 0 16px 24px;
+    margin: 0 0 11px 24px;
 }
 
 .entry-content li {
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
 /* ---------- People Page ---------- */
@@ -233,9 +233,9 @@ img {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin: 40px 0 12px;
+    margin: 28px 0 8px;
     border-top: 1px solid var(--color-border);
-    padding-top: 24px;
+    padding-top: 16px;
 }
 
 .entry-content > .people-section-title:first-of-type,
@@ -259,13 +259,13 @@ img {
 
 .alumni-list li {
     font-size: 0.875rem;
-    padding: 3.5px 0;
+    padding: 2px 0;
     break-inside: avoid;
     color: var(--color-text-muted);
 }
 
 .alumni-list:not(.single-column) li {
-    padding: 1.75px 0;
+    padding: 1px 0;
 }
 
 .alumni-list li strong {
@@ -275,7 +275,7 @@ img {
 
 /* ---------- Publications Page ---------- */
 .pub-year-group {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .pub-year {
@@ -295,9 +295,9 @@ img {
 
 .pub-list li {
     font-size: 0.9rem;
-    padding: 10px 0;
+    padding: 8px 0;
     position: relative;
-    line-height: 1.6;
+    line-height: 1.4;
     background: none;
     border: none;
     border-bottom: 1px solid var(--color-border);
@@ -329,7 +329,7 @@ img {
     border: none;
     border-bottom: 1px solid var(--color-border);
     border-radius: 0;
-    padding: 18px 0;
+    padding: 14px 0;
     background: none;
     transition: none;
 }
@@ -363,7 +363,7 @@ img {
 .course-item p {
     font-size: 0.875rem;
     color: var(--color-text-muted);
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 /* ---------- Contact Page ---------- */
@@ -377,7 +377,7 @@ img {
     border: none;
     border-bottom: 1px solid var(--color-border);
     border-radius: 0;
-    padding: 22px 0;
+    padding: 16px 0;
     box-shadow: none;
     transition: none;
 }
@@ -409,7 +409,7 @@ img {
 .contact-card address {
     font-size: 0.9rem;
     font-style: normal;
-    line-height: 1.8;
+    line-height: 1.5;
     color: var(--color-text-muted);
 }
 
@@ -428,7 +428,7 @@ img {
 }
 
 .contact-card ul li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .people-intro {
