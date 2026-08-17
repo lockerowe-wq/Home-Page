@@ -491,6 +491,21 @@ img {
     .site-main {
         padding: 28px 0 48px;
     }
+
+    .people-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .people-intro-text {
+        width: 100%;
+    }
+
+    .rowe-portrait {
+        width: 160px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 600px) {
@@ -509,8 +524,12 @@ img {
 
     .people-intro {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 16px;
+    }
+
+    .people-intro-text {
+        width: 100%;
     }
 
     .rowe-portrait {
