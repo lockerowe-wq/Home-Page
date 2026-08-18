@@ -8,8 +8,8 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-    --color-nav-bg:       #24433D;
-    --color-nav-bg-light: #2F5850;
+    --color-nav-bg:       linear-gradient(135deg, #006e6e 0%, #008888 60%, #3c8858 100%);
+    --color-nav-bg-light: linear-gradient(135deg, #4D9A9A 0%, #4DACAC 60%, #77AC8A 100%);
     --color-primary:      #003366;
     --color-link:         #3D6EA5;
     --color-link-hover:   #1F4C7A;
