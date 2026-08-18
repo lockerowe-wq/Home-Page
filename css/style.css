@@ -8,8 +8,8 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-    --color-nav-bg:       linear-gradient(135deg, #006e6e 0%, #008888 60%, #3c8858 100%);
-    --color-nav-bg-light: linear-gradient(135deg, #4D9A9A 0%, #4DACAC 60%, #77AC8A 100%);
+    --color-nav-bg:       #006e6e;
+    --color-nav-bg-light: #4D9A9A;
     --color-primary:      #003366;
     --color-link:         #3D6EA5;
     --color-link-hover:   #1F4C7A;
@@ -114,7 +114,7 @@ img {
 /* ---------- Site Header + Nav (styled as one navbar, like the reference site) ---------- */
 .site-header {
     background: var(--color-nav-bg);
-    padding: 18px 0;
+    padding: 22px 0;
 }
 
 .site-header .site-wrapper {
@@ -130,7 +130,7 @@ img {
 }
 
 .site-title {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -144,7 +144,7 @@ img {
 }
 
 .site-description {
-    font-size: 0.8125rem;
+    font-size: 0.9rem;
     color: rgba(255,255,255,.65);
     margin-top: 4px;
 }
@@ -172,9 +172,9 @@ img {
 .primary-nav ul li a {
     display: block;
     color: rgba(255,255,255,.8);
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    padding: 12px 14px;
+    padding: 15px 16px;
     text-decoration: none;
     transition: color var(--transition), background var(--transition);
 }
