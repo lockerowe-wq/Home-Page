@@ -277,6 +277,11 @@ img {
     font-weight: 500;
 }
 
+.alumni-list li .position-date {
+    display: inline-block;
+    min-width: 110px;
+}
+
 /* ---------- Publications Page ---------- */
 .pub-year-group {
     margin-bottom: 20px;
